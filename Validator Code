@@ -1,0 +1,17 @@
+babylond tx checkpointing create-validator \
+--amount 1000000ubbn \
+--pubkey $(babylond tendermint show-validator) \
+--moniker “funtom” \
+--identity "bbn1pz696p6gpyxjlgfzzd4m0va7gzzngg6fjggmu5" \
+--details "YOUR_DETAILS" \
+--website "YOUR_WEBSITE_URL" \
+--chain-id bbn-test-2 \
+--commission-rate 0.05 \
+--commission-max-rate 0.20 \
+--commission-max-change-rate 0.01 \
+--min-self-delegation 1 \
+--from wallet \bbn1nrgme983s2zexntu07j9hq75a7fxrrxuy6dfgg
+--gas-adjustment 1.4 \
+--gas auto \
+--gas-prices 0.00001ubbn \
+-y
